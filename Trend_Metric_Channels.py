@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 import streamlit as st
 
-df = pd.read_csv('/content/drive/My Drive/Datasets/Final_YouTube_Dataset/YouTube.csv')
+df = pd.read_csv('YouTube.csv')
 
 selection = st.selectbox('Select the category', df.Category.unique())
 nation = st.selectbox('Select the Country', df.Country.unique())
